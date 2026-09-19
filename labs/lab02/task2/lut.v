@@ -20,6 +20,7 @@ module lut #(
     for (i = 0; i < DEPTH; i = i + 1)
       mem[i] = i * i;
   end
+  
 
   always @(*) begin
     dout = mem[sel];
